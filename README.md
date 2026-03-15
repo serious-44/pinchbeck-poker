@@ -23,7 +23,7 @@ Of course, you can also copy the game to your private web server. And type in th
 
 Would you like to expand this world? Create your own stories, make your own videos, and experiment with your own style.
 
-Are you a programmer with ideas on how we can replace static videos with interactive dialogues? Or an AI expert who knows which tools are best suited for a project like this?
+Are you an artist? Do you know what soundtrack and lighting create the right atmosphere? Or are you a programmer with ideas on how we can replace the static videos with interactive dialogues? Or an AI expert who knows which tools are best suited for a project like this?
 
 So far, there’s no community, no space for discussion, and no rules for submitting contributions. Would you like to organize a community? Until we have a forum, we could collect ideas on https://f95zone.to/threads/virtual-strip-virtual-poker-games.4450. 
 
