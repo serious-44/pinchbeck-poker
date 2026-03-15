@@ -338,7 +338,7 @@ class Opponent extends Agent {
     config = {};
     frameTime = 1/32;
     pose = 0;
-    startpose = -1;
+    startpose = 0;
     holdingCards = false;
 
     playingQueue = [];
@@ -427,7 +427,6 @@ class Opponent extends Agent {
         this.currentClip = null;
         if (this.state == State.Intro) {
             this.state = State.Deal;
-            this.pose = Math.floor(Math.random() * this.config.poses);
         }
         if (this.state == State.FinalClip) {
             this.state = State.GameDone;
