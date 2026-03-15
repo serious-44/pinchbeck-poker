@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+* {
+    margin:0;
+    padding:0;
+    border-radius: 0;
+    font: 14px sans-serif;
+}
+body {
+  height: 100vh;
+}
+a:link, a:visited {
+    color: black;
+}
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.content-box {
+    position: absolute;
+    top: 0;
+    left: 5%;
+    height: 100%;
+    display:flex;
+    align-items:center;
+}
+.content {
+    max-width: 1100px;
+}
+.opponent-name {
+    font-size: 18px;
+}
+.title {
+    font-size:30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px 10px 0 10px;
+    border-radius: 8px;
+    background-image: url(img/tile.png);
+}
+.footer {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    background-image: url(img/tile.png);
+}
+.opponents {
+    display: grid;
+    grid-template-columns: 55% 45%;
+    column-gap: 10px;
+    display: grid;
+    padding: 10px;
+    border-radius: 8px;
+    background-image: url(img/tile.png);
+}
+.opponent-image {
+    width: 100%;
+}
+</style>
+</head>
+<body>
+<img class="background-image" src="img/background.png">
+<div class="content-box">
+<div class="content">
+<div class="title">
+    <img src="img/title.png">
+</div>
+<div class="opponents" >
+    <div class="opponent-image-cell">
+        <a href="play.html?id1=720p/6001-succie">
+            <img class="opponent-image" src="720p/6001-succie/index.png">
+        </a>
+    </div>
+    <div class="opponent-text-cell">
+        <span class="opponent-name" onclick="location.href='play.html?id1=720p/6001-succie'">Opponent Succie, the philosophy-loving succubus.</span>
+        <br>&nbsp;<br>
+        For all the copyright infringements you have committed in your lifetime, you are condemned to play strip poker with Succie until the end of time.
+        <br>
+        Word of caution: For the dialogues, ChatGPT plagiarized Dostoevsky. This man is the master of depicting the torments of hell.
+        <br>&nbsp;<br>&nbsp;<br>
+        Music by <a href="https://www.das-kaiserreich.net/">https://www.das-kaiserreich.net/</a>
+        <br>
+        Voice by <a href="https://elevenlabs.io/">https://elevenlabs.io/</a>
+        <br>
+        Images and videos created with <a href="https://www.comfy.org/">https://www.comfy.org/</a>
+    </div>
+</div>
+<div class="footer">
+    Pinchbeck Poker is a free open sorce game. You can download the game from <a href="https://github.com/serious-44/pinchbeck-poker">https://github.com/serious-44/pinchbeck-poker</a>.
+    <br>&nbsp;<br>
+    So far, there’s only one opponent. Would you like to expand this world? Create your own stories, make your own videos, and experiment with your own style.
+    <br>
+    Are you a programmer with ideas on how we can replace static videos with interactive dialogues? Or an AI expert who knows which tools are best suited for a project like this?
+    <br>
+    So far, there’s no community, no space for discussion, and no rules for submitting contributions. Would you like to organize a community?
+    <br>
+    Until we have a forum, we could collect ideas on <a href="https://f95zone.to/threads/virtual-strip-virtual-poker-games.4450">https://f95zone.to/threads/virtual-strip-virtual-poker-games.4450</a>.
+    <br>
+    For bug reports, there’s already <a href="https://github.com/serious-44/pinchbeck-poker/issues">https://github.com/serious-44/pinchbeck-poker/issues</a>. 
+    <br>&nbsp;<br>
+    This website does not use cookies and does not collect personal data. However, the provider logs IP address and user agent.
+</div>
+</div>
+</div>
+</body>
+</html>
