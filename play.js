@@ -1,6 +1,6 @@
 "use strict";
 
-let cheatBetterCards = 0; // change to 3 or 4 to get better cards
+let cheatBetterCards = 1; // change to 3 or 4 to get better cards
 let cheatOpponentsDontFold = false;
 
 let playIdleVideos = true;
@@ -405,6 +405,8 @@ class Opponent extends Agent {
             this.ui.video[this.nextVideo].hidden = false;
             if (this.activeVideo >= 0) {
                 this.ui.video[this.activeVideo].hidden = true;
+            } else {
+                game.ui.startOverlay.style.display = "none"; //FIXME
             }
             this.activeVideo = this.nextVideo;
         } else {
@@ -425,6 +427,7 @@ class Opponent extends Agent {
         this.currentClip = null;
         if (this.state == State.Intro) {
             this.state = State.Deal;
+            this.pose = Math.floor(Math.random() * this.config.poses);
         }
         if (this.state == State.FinalClip) {
             this.state = State.GameDone;
@@ -1243,7 +1246,7 @@ class Game {
 
     start() {
         this.hideGui();
-        this.ui.startOverlay.style.display = "none";
+        //this.ui.startOverlay.style.display = "none";
         this.audio = new Audio(false, this.opponents[0].config);
         this.loaded = true;
         for (let o of this.opponents) {
